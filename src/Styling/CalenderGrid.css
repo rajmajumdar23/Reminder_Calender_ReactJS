@@ -1,0 +1,230 @@
+
+.calendar-grid {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6px;
+    justify-content: flex-start;
+}
+
+.calendar-cell {
+    width: calc(10% - 10px);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-cell:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.colored-date {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+.day {
+    font-size: 16px;
+    text-align: center;
+}
+
+.date {
+    font-size: 24px;
+    text-align: center;
+}
+
+.reminder-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reminder-form input[type="text"],
+.reminder-form input[type="time"],
+.reminder-form button {
+    width: 92.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#close-button {
+    padding-top: 7px;
+    padding-bottom: 1px;
+    font-size: 22px;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 44px;
+    border-color: #ff0000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#close-button:hover {
+    background-color: #f03a3a;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#add-button {
+    margin-left: 7px;
+    margin-top: 0px;
+    border-color: #216b0b;
+    background-color: #216b0b;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    width: 249px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#add-button:hover {
+    background-color: rgb(51, 116, 32);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reminder-list {
+    margin-top: 20px;
+}
+
+.reminder-list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reminder-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reminder-list li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .date {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .day {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .calendar-grid {
+        padding: 10px;
+        margin-left: 1px;
+    }
+
+    .calendar {
+        max-width: 65%;
+        padding: 10px;
+    }
+
+    .calendar-cell {
+        width: calc(20.6% - 10px);
+        padding: 5px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+
+    }
+
+    #close-button {
+        padding-top: 7px;
+        padding-bottom: 1px;
+        font-size: 22px;
+        background-color: #9b68ce;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        max-width: 44px;
+        border-color: #9b68ce;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #close-butto:hover{
+        background-color: #ae8ad1;
+    }
+    #add-button {
+        margin-left: 7px;
+        margin-top: 0px;
+        border-color: #e57171;
+        background-color: #e57171;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        width: 207px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #add-button:hover{
+        background-color: #df8b8b;
+    }
+    .reminder-form {
+        margin-top: 5%;
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
+    .calendar-grid {
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    .calendar-cell {
+        width: calc(25% - 10px);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .reminder-form {
+        max-width: 300px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .calendar-grid {
+        max-width: 800px;
+        padding: 20px;
+    }
+
+    .calendar-cell {
+            width: calc(5.9%);
+            margin-left: 1%;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+
+    .reminder-form {
+        max-width: 300px;
+        padding: 20px;
+    }
+}

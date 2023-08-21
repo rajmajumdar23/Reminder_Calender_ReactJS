@@ -1,0 +1,138 @@
+#image1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#image2 {
+    display: none;
+}
+
+.calendar {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: -48%;
+    margin-left: 27.6%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.h1{
+    text-align: center;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f201a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-grid {
+    background-color: #f8f6f7;
+    height: 41vh;
+    box-shadow: 0px 0px 0px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: linear-gradient(45deg, #ffcccc, #cc99ff, #ffcc99);
+
+        padding: 10px 20px;
+        height:98vh;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        background-size: 200% 200%;
+        animation: gradientAnimation 10s infinite;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        25% {
+            background-position: 100% 50%;
+        }
+
+        50% {
+            background-position: 50% 100%;
+        }
+
+        75% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+    
+        }
+    }
+
+    .calendar {
+        margin-left: 3.5%;
+        max-width: 76.5%;
+        padding: 10px;
+        margin-top: 0%;
+    }
+
+    .calendar-header {
+        padding: 10px;
+        background: linear-gradient(45deg, #e57171, #9b68ce);
+    }
+
+    .calendar-grid {
+        padding: 10px;
+        width: 278.2px;
+        height: 376px;
+        background: white;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #image1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
+
+    .calendar {
+        max-width: 600px;
+    }
+
+    .calendar-header {
+        padding: 15px 20px;
+    }
+
+    .calendar-grid {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+
+    .calendar {
+        margin-left: 24.1%;
+        max-width: 738px;
+    }
+
+.calendar-header {
+    padding: 20px 20px;
+}
+
+.calendar-grid {
+    padding: 20px 20px;
+}
+}
