@@ -52,7 +52,7 @@
     color: #333;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .calendar-header {
         padding: 10px;
         width: 280px;
